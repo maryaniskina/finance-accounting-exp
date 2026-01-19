@@ -1,3 +1,5 @@
+from typing import TYPE_CHECKING
+
 from sqlalchemy import String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -18,5 +20,10 @@ class User(Base, SoftDeleteMixin, TimestampMixin):
 
     refresh_tokens: Mapped[list[Token]] = relationship(
         back_populates='user',
+        cascade='all, delete-orphan',
+    )
+
+    companies: Mapped[list["Company"]] = relationship(
+        back_populates='owner',
         cascade='all, delete-orphan',
     )
