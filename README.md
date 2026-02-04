@@ -4,6 +4,11 @@
 - [ ] Banking API
 - [ ] Websokets
 - [ ] Format README.md
-- [ ] Caching balance, snapshots
 - [ ] Dummy hash
 - [ ] Makefile
+- [ ] Tests, coverage, actions
+- [x] Statements: 
+    - [x] P&L by categories
+    - [x] P&L by groups
+    - [x] P&L by projects
+    - [x] CashFlow by month
