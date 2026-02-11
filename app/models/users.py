@@ -7,6 +7,9 @@ from app.db.base import Base
 from app.models.auth import Token
 from app.models.mixins import SoftDeleteMixin, TimestampMixin
 
+if TYPE_CHECKING:
+    from app.models import Company, Subscription
+
 
 class User(Base, SoftDeleteMixin, TimestampMixin):
     __tablename__ = 'users'
@@ -25,5 +28,11 @@ class User(Base, SoftDeleteMixin, TimestampMixin):
 
     companies: Mapped[list['Company']] = relationship(
         back_populates='owner',
+        cascade='all, delete-orphan',
+    )
+
+    subscription: Mapped['Subscription | None'] = relationship(
+        back_populates='user',
+        uselist=False,
         cascade='all, delete-orphan',
     )
