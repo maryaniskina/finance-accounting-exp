@@ -1,5 +1,5 @@
-[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=mileevamaria_finance-accounting-exp&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mileevamaria_finance-accounting-exp)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=mileevamaria_finance-accounting-exp&metric=coverage)](https://sonarcloud.io/summary/new_code?id=mileevamaria_finance-accounting-exp)
+[![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=maryaniskina_finance-accounting-exp&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=maryaniskina_finance-accounting-exp)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=maryaniskina_finance-accounting-exp&metric=coverage)](https://sonarcloud.io/summary/new_code?id=maryaniskina_finance-accounting-exp)
 [![CI](https://github.com/mileevamaria/finance-accounting-exp/actions/workflows/python-app.yml/badge.svg)](https://github.com/mileevamaria/finance-accounting-exp/actions/workflows/python-app.yml)
 
 # Finance Accounting Platform
